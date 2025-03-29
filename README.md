@@ -1,5 +1,11 @@
 # maplibre-gl-logo
 
+A customizable logo control for [MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/).
+
+> [!NOTE]
+> This plugin provides a customizable logo control inspired by the built-in [LogoControl](https://maplibre.org/maplibre-gl-js/docs/API/classes/LogoControl/) of MapLibre GL JS.
+> It allows you to display your own logo (e.g., a company or product logo) on the map.
+
 ## Installation
 
 ```sh
@@ -13,7 +19,9 @@ import { Map } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { CustomLogoControl } from "maplibre-gl-logo";
 
-const map = new Map({/* YOUR_MAP_OPTION */});
+const map = new Map({
+  /* YOUR_MAP_OPTIONS */
+});
 
 map.addControl(
   new CustomLogoControl({
@@ -25,15 +33,15 @@ map.addControl(
 
 ## Options
 
-| name   | required | default             | description                  |
-| ------ | -------- | ------------------- | ---------------------------- |
-| logo   | required |                     | `<img>` **src** attribute.   |
-| href   | required |                     | `<a>` **href** attribute.    |
-| width  |          |                     | `<img>` **width** attribute. |
-| height |          |                     | `<img>` **hegit** attribute. |
-| alt    |          |                     | `<img>` **alt** attribute.   |
-| target |          | '_blank'            | `<a>` **target** attribute.  |
-| ref    |          | 'noopener nofollow' | `<a>` **rel** attribute.     |
+| Name   | Required | Default             | Description                               |
+| ------ | -------- | ------------------- | ----------------------------------------- |
+| logo   | Yes      | -                   | The **src** attribute for the `<img>`.    |
+| href   | Yes      | -                   | The **href** attribute for the `<a>`.     |
+| width  | No       | -                   | The **width** attribute for the `<img>`.  |
+| height | No       | -                   | The **height** attribute for the `<img>`. |
+| alt    | No       | -                   | The **alt** attribute for the `<img>`.    |
+| target | No       | "_blank"            | The **target** attribute for the `<a>`.   |
+| rel    | No       | "noopener nofollow" | The **rel** attribute for the `<a>`.      |
 
 ## License
 
