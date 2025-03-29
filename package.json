@@ -1,6 +1,6 @@
 {
   "name": "maplibre-gl-logo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A customizable logo control for MapLibre GL JS",
   "type": "module",
   "files": [
