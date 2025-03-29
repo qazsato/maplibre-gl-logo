@@ -18,9 +18,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build:lib": "tsc && vite build --config vite.config.lib.js",
-    "build:app": "tsc && vite build --config vite.config.app.js",
-    "build": "npm run build:lib && npm run build:app",
+    "build": "tsc && vite build --config vite.config.js",
     "preview": "vite preview",
     "lint": "eslint src/*.ts src/**/*.ts",
     "lint:fix": "npm run lint -- --fix"
