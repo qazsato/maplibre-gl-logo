@@ -2,9 +2,8 @@
 
 A customizable logo control for [MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/).
 
-> [!NOTE]
-> This plugin provides a customizable logo control inspired by the built-in [LogoControl](https://maplibre.org/maplibre-gl-js/docs/API/classes/LogoControl/) of MapLibre GL JS.
-> It allows you to display your own logo (e.g., a company or product logo) on the map.
+This plugin provides a customizable logo control inspired by the built-in [LogoControl](https://maplibre.org/maplibre-gl-js/docs/API/classes/LogoControl/) of MapLibre GL JS.  
+It allows you to display your own logo (e.g., a company or product logo) on the map.
 
 ## Installation
 
