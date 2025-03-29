@@ -34,3 +34,7 @@ map.addControl(
 | alt    |          |                     | `<img>` **alt** attribute.   |
 | target |          | '_blank'            | `<a>` **target** attribute.  |
 | ref    |          | 'noopener nofollow' | `<a>` **rel** attribute.     |
+
+## License
+
+This project is licensed under the terms of the [MIT license](./LICENSE).
