@@ -1,0 +1,52 @@
+{
+  "name": "maplibre-gl-logo",
+  "version": "0.1.0",
+  "description": "CutomizeLogoControl for MapLibre GL JS",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/maplibre-gl-logo.umd.cjs",
+  "module": "./dist/maplibre-gl-logo.js",
+  "types": "./dist/maplibre-gl-logo.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/maplibre-gl-logo.js",
+      "require": "./dist/maplibre-gl-logo.umd.cjs"
+    },
+    "./style.css": "./dist/maplibre-gl-logo.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build:lib": "tsc && vite build --config vite.config.lib.js",
+    "build:app": "tsc && vite build --config vite.config.app.js",
+    "build": "npm run build:lib && npm run build:app",
+    "preview": "vite preview",
+    "lint": "eslint src/*.ts src/**/*.ts",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.12.0",
+    "maplibre-gl": "^5.3.0",
+    "pmtiles": "^4.3.0",
+    "prettier": "^3.4.1",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.16.0",
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qazsato/maplibre-gl-logo.git"
+  },
+  "keywords": [
+    "MapLibre GL JS",
+    "Logo"
+  ],
+  "author": "qazsato <qazsato@gmail.com>",
+  "license": "MIT"
+}
